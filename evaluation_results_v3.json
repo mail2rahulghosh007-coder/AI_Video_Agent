@@ -1,0 +1,58 @@
+{
+  "rag": [
+    {
+      "question": "Why did senior doctors compare social media to smoking?",
+      "generated_answer": "The senior doctors from the Academy of Medical Royal Colleges compared social media to smoking because they said the issue is a unifying force for the harm it causes.",
+      "faithfulness_score": 1.0,
+      "faithfulness_reason": "The ANSWER is fully supported by the CONTEXT, which explicitly states the comparison and the reasoning provided by the senior doctors.",
+      "ground_truth": "Not because of the same physical health impact, but because they believe it's a serious health issue that needs to be taken seriously \u2014 similar to how attitudes changed about smoking and seatbelts.",
+      "answer_similarity": 0.558
+    },
+    {
+      "question": "What does 'behind the curve' mean in this context?",
+      "generated_answer": "Pippa explains: \"If you are behind the curve, you are not acting quickly enough to deal with a particular change or trend.\"",
+      "faithfulness_score": 1.0,
+      "faithfulness_reason": "The ANSWER is directly quoted from the CONTEXT with no added or altered information.",
+      "ground_truth": "It means reacting or acting more slowly than others to a change or trend \u2014 used to describe the UK PM being slow on a social media ban for under-16s.",
+      "answer_similarity": 0.462
+    },
+    {
+      "question": "What measures is the UK government considering besides a full ban?",
+      "generated_answer": "I could not find this information in the meeting transcript.",
+      "faithfulness_score": 0.0,
+      "faithfulness_reason": "The ANSWER claims the information is not in the meeting transcript, but the CONTEXT provided is identical to the transcript content, making the ANSWER unsupported.",
+      "ground_truth": "Curfews on app usage at night, stronger age checks, and restricting features like autoplay and infinite scroll.",
+      "answer_similarity": 0.062
+    }
+  ],
+  "outputs": {
+    "summary": {
+      "completeness": 4,
+      "accuracy": 5,
+      "conciseness": 4,
+      "reason": "The summary captures the main points but omits some details like the specific examples of 'consensus' and 'nothing's off the table,' and the comparison to seatbelts.",
+      "output": "**Final Professional Meeting Summary:**\n\n- **Key Discussion Topic:**\n  - The impact of social media and screen time on children's health, as raised by UK senior doctors.\n\n- **Concerns Highlighted:**\n  - Social media's harm to children's health is compared to the dangers of smoking, with issues like anxiety and poor well-being being emphasized.\n  - The UK government is considering a ban on social media for under-16s, similar to Australia's approach.\n\n- **Consensus and Phrases Explained:**\n  - \"Overwhelming consensus\" refers to a strong agreement among a group, with most people sharing the same opinion.\n  - \"Behind the curve\" means reacting slower than necessary to a trend or change.\n  - \"Nothing's off the table\" indicates all options are still under consideration.\n\n- **Government Actions and Considerations:**\n  - The UK government is considering measures to protect children online, including potential bans, curfews, and stricter age checks on social media apps by 2026.\n  - Former UK Health Secretary Wes Streeting criticizes the UK Prime Minister for being \"behind the curve\" on implementing such a ban.\n  - The government has not yet made final decisions, and experts and campaigners debate the best approach, with some advocating for total bans and others highlighting social media's positive impacts."
+    },
+    "action items": {
+      "completeness": 1,
+      "accuracy": 5,
+      "conciseness": 5,
+      "reason": "The AI output correctly identifies that there are no action items in the transcript, as it is a news podcast discussing social media and health concerns without any meeting-related tasks.",
+      "output": "No action items found."
+    },
+    "key decisions": {
+      "completeness": 1,
+      "accuracy": 5,
+      "conciseness": 5,
+      "reason": "The AI output failed to capture any key decisions from the transcript, despite multiple clear decisions being discussed.",
+      "output": "no key decision found"
+    },
+    "open questions": {
+      "completeness": 4,
+      "accuracy": 5,
+      "conciseness": 5,
+      "reason": "The output captures most key themes (measures, evidence, unintended consequences, stakeholder roles, alternatives, and privacy concerns) but omits the comparison to smoking/seatbelts and the 'overwhelming consensus' phrasing from the transcript.",
+      "output": "1. What specific measures will the UK government implement to protect children from social media harms by the end of 2026?\n2. How effective is Australia\u2019s ban on social media for under-16s in preventing harm, and what evidence supports this?\n3. What are the potential unintended consequences of implementing a social media ban for under-16s in the UK?\n4. How do young people\u2019s positive experiences with social media compare to the documented harms, and what balance should be struck?\n5. What role should parents, schools, and tech companies play in mitigating social media risks for children?\n6. Are there alternative strategies besides bans (e.g., curfews, age checks, feature restrictions) that could be more effective or practical?\n7. How will the UK government address concerns about privacy and digital rights when implementing stricter age verification or monitoring measures?"
+    }
+  }
+}

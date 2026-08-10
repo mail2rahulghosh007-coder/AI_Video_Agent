@@ -1,0 +1,64 @@
+{
+  "rag": [
+    {
+      "question": "What was the name of the station where Henry got off the train?",
+      "generated_answer": "He got off the train at the West Town station.",
+      "faithfulness_score": 1.0,
+      "faithfulness_reason": "The answer is directly supported by the context stating he got off the train at the West Town station."
+    },
+    {
+      "question": "Why did Henry need a partner to find the robbers?",
+      "generated_answer": "Henry said, \"I need a strong and wise partner.\"",
+      "faithfulness_score": 1.0,
+      "faithfulness_reason": "The ANSWER is directly quoted from the CONTEXT with no invented information."
+    },
+    {
+      "question": "What did the nervous man tell Henry about the bank?",
+      "generated_answer": "The nervous man told Henry that there was a bank robbery.",
+      "faithfulness_score": 1.0,
+      "faithfulness_reason": "The answer is directly supported by the context which states the nervous man told Henry about a bank robbery."
+    },
+    {
+      "question": "How did Henry and Bonnie eventually catch the robbers?",
+      "generated_answer": "Henry and Bonnie caught the robbers by finding them inside their mine while they were preparing explosives.",
+      "faithfulness_score": 1.0,
+      "faithfulness_reason": "The ANSWER is fully supported by the CONTEXT with no invented information."
+    },
+    {
+      "question": "What did Henry and Bonnie do after losing the robbers on the rope bridge?",
+      "generated_answer": "They took another road.",
+      "faithfulness_score": 1.0,
+      "faithfulness_reason": "The answer is fully supported by the context, which states that Henry and Bonnie had to take another road after the robbers cut the rope bridge."
+    }
+  ],
+  "outputs": {
+    "summary": {
+      "completeness": 4,
+      "accuracy": 5,
+      "conciseness": 3,
+      "reason": "The summary captures the main points but omits some minor details (e.g., the sabotaged rope bridge, the campfire scene) and includes slightly redundant phrasing.",
+      "output": "**Final Professional Meeting Summary:**\n\n- **Session Overview:**\n  - Conducted an English speaking practice session using a short story set in Wild West Town.\n  - Story centered around Henry, who witnesses a bank robbery and partners with Bonnie, a skilled sharpshooter, to track down the robbers.\n\n- **Story Summary:**\n  - Henry witnesses a bank robbery and feels motivated to find the robbers despite his sadness and anger.\n  - Receives a recommendation for Bonnie, a skilled and reliable sharpshooter, who agrees to help.\n  - The pursuit involves challenges, such as a sabotaged bridge, but ultimately leads to catching the robbers in a mine.\n  - The story concludes with the town celebrating their success.\n\n- **Learning Activities:**\n  - Instructor asked easy questions about the story to improve participants' speaking skills.\n  - Suggested practicing via EnglishEasyPractice.com for enhanced listening and speaking skills.\n\n- **Key Takeaways:**\n  - Importance of teamwork and finding the right partner to overcome challenges.\n  - Practice and repetition are essential for improving language skills."
+    },
+    "action items": {
+      "completeness": 3,
+      "accuracy": 4,
+      "conciseness": 3,
+      "reason": "The action items capture some procedural instructions but miss key narrative elements (e.g., Henry's goal, Bonnie's role, the robbers' capture) and lack specificity in ownership/deadlines.",
+      "output": "**Action Items:**\n\n1. **Task description:** Listen to the short story and answer easy questions out loud to improve speaking skills.\n   - **Owner:** Listener (not specified)\n   - **Deadline:** Not specified\n\n2. **Task description:** Pause the lesson and say the answer if extra time is needed.\n   - **Owner:** Listener (not specified)\n   - **Deadline:** Not specified\n\n3. **Task description:** Listen to the lesson a few times if the questions are too difficult.\n   - **Owner:** Listener (not specified)\n   - **Deadline:** Not specified\n\n4. **Task description:** Visit EnglishEasyPractice.com to download audio lessons of the story for additional practice.\n   - **Owner:** Listener (not specified)\n   - **Deadline:** Not specified"
+    },
+    "key decisions": {
+      "completeness": 1,
+      "accuracy": 5,
+      "conciseness": 5,
+      "reason": "The AI output correctly identifies that no key decisions were made in the transcript, as it is an English practice lesson without decisions.",
+      "output": "No key decision found."
+    },
+    "open questions": {
+      "completeness": 1,
+      "accuracy": 5,
+      "conciseness": 5,
+      "reason": "The AI output correctly identifies that no open questions were found in the transcript.",
+      "output": "no open question found"
+    }
+  }
+}

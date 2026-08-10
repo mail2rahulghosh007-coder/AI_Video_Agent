@@ -1,0 +1,101 @@
+[
+  {
+    "video_label": "v1",
+    "source": "https://www.youtube.com/watch?v=TbmSCdn_iUo",
+    "rag_avg_faithfulness": 1.0,
+    "rag_avg_answer_similarity": null,
+    "n_rag_questions": 5,
+    "output_scores": {
+      "summary": {
+        "completeness": 4,
+        "accuracy": 5,
+        "conciseness": 3,
+        "reason": "The summary captures the main points but omits some minor details (e.g., the sabotaged rope bridge, the campfire scene) and includes slightly redundant phrasing."
+      },
+      "action items": {
+        "completeness": 3,
+        "accuracy": 4,
+        "conciseness": 3,
+        "reason": "The action items capture some procedural instructions but miss key narrative elements (e.g., Henry's goal, Bonnie's role, the robbers' capture) and lack specificity in ownership/deadlines."
+      },
+      "key decisions": {
+        "completeness": 1,
+        "accuracy": 5,
+        "conciseness": 5,
+        "reason": "The AI output correctly identifies that no key decisions were made in the transcript, as it is an English practice lesson without decisions."
+      },
+      "open questions": {
+        "completeness": 1,
+        "accuracy": 5,
+        "conciseness": 5,
+        "reason": "The AI output correctly identifies that no open questions were found in the transcript."
+      }
+    }
+  },
+  {
+    "video_label": "v3",
+    "source": "https://www.youtube.com/watch?v=2FZEznNC-Fs",
+    "rag_avg_faithfulness": 0.6666666666666666,
+    "rag_avg_answer_similarity": 0.3606666666666667,
+    "n_rag_questions": 3,
+    "output_scores": {
+      "summary": {
+        "completeness": 4,
+        "accuracy": 5,
+        "conciseness": 4,
+        "reason": "The summary captures the main points but omits some details like the specific examples of 'consensus' and 'nothing's off the table,' and the comparison to seatbelts."
+      },
+      "action items": {
+        "completeness": 1,
+        "accuracy": 5,
+        "conciseness": 5,
+        "reason": "The AI output correctly identifies that there are no action items in the transcript, as it is a news podcast discussing social media and health concerns without any meeting-related tasks."
+      },
+      "key decisions": {
+        "completeness": 1,
+        "accuracy": 5,
+        "conciseness": 5,
+        "reason": "The AI output failed to capture any key decisions from the transcript, despite multiple clear decisions being discussed."
+      },
+      "open questions": {
+        "completeness": 4,
+        "accuracy": 5,
+        "conciseness": 5,
+        "reason": "The output captures most key themes (measures, evidence, unintended consequences, stakeholder roles, alternatives, and privacy concerns) but omits the comparison to smoking/seatbelts and the 'overwhelming consensus' phrasing from the transcript."
+      }
+    }
+  },
+  {
+    "video_label": "v2",
+    "source": "https://www.youtube.com/watch?v=Y681hXWwhQY",
+    "rag_avg_faithfulness": 0.5,
+    "rag_avg_answer_similarity": 0.362,
+    "n_rag_questions": 4,
+    "output_scores": {
+      "summary": {
+        "completeness": 5,
+        "accuracy": 5,
+        "conciseness": 4,
+        "reason": "The summary captures all key points, maintains factual accuracy, and is concise though slightly verbose in phrasing."
+      },
+      "action items": {
+        "completeness": 1,
+        "accuracy": 5,
+        "conciseness": 5,
+        "reason": "The transcript is a casual discussion with no actionable items, so the AI correctly identified no action items."
+      },
+      "key decisions": {
+        "completeness": 1,
+        "accuracy": 5,
+        "conciseness": 5,
+        "reason": "The AI output correctly identifies that no key decisions were present in the transcript."
+      },
+      "open questions": {
+        "completeness": 4,
+        "accuracy": 5,
+        "conciseness": 5,
+        "reason": "The output captures the main discussion points but misses some key details like the algae growing on sloths' coats and the idiom 'boredom is the mother of invention'."
+      }
+    }
+  }
+]

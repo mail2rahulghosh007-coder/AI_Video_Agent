@@ -1,9 +1,27 @@
+# Environments
 .venv/
+.venv_new/
 venv/
+env/
+
+# Secrets
+.env
+
+# Python
+__pycache__/
+*.pyc
+
+# Streamlit
+.streamlit/secrets.toml
+
+# Generated / runtime data (regenerable, don't need to be in version control)
 downloads/
 vector_db/
-*.wav
-*.mp3
-*.mp4
-.env
-__pycache__/
+transcripts/*.txt
+
+# Keep one sample transcript as an example if you want (optional):
+# !transcripts/sample1.txt
+
+# OS
+.DS_Store
+Thumbs.db
