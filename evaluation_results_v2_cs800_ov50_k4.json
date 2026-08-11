@@ -1,0 +1,63 @@
+{
+  "rag": [
+    {
+      "question": "What percentage of rock ants are inactive at any given time?",
+      "generated_answer": "Around half of the rock ant colony is inactive at any given time.",
+      "faithfulness_score": 1.0,
+      "faithfulness_reason": "The ANSWER directly matches the CONTEXT's statement that 'around half of them [rock ants] just sitting there motionless' and 'roughly about half the colony is inactive at any given time'.",
+      "ground_truth": "Roughly about half (50%) of the ant colony is inactive at any given time.",
+      "answer_similarity": 0.898
+    },
+    {
+      "question": "What is the slowest moving animal on earth according to the discussion?",
+      "generated_answer": "The slowest moving animal on earth is the three-toed sloth.\n\n*\"With a top speed of 30 centimetres per minute, three-toed sloths move so slowly that algae grows on their coats.\"*",
+      "faithfulness_score": 1.0,
+      "faithfulness_reason": "The answer is directly supported by the context, which explicitly states that the three-toed sloth is the slowest moving animal on earth.",
+      "ground_truth": "The three-toed sloth, with a top speed of 30 centimetres per minute.",
+      "answer_similarity": 0.711
+    },
+    {
+      "question": "What does Dr Sandy Mann suggest about the benefits of boredom?",
+      "generated_answer": "Dr Sandy Mann suggests that boredom has its benefits and that being productive and working excessively is overrated. She highlights that boredom can lead to curiosity and creativity, which are important for inventions like bread or beer.",
+      "faithfulness_score": 0.8,
+      "faithfulness_reason": "The ANSWER correctly attributes the idea that boredom has benefits and can lead to curiosity and creativity to Dr Sandy Mann, but the CONTEXT does not explicitly mention bread or beer in relation to her views.",
+      "ground_truth": "She suggests boredom sparks curiosity and creativity \u2014 calling it 'the mother of invention' \u2014 and that inventions like bread, beer, or fire may not have happened without boredom.",
+      "answer_similarity": 0.643
+    },
+    {
+      "question": "What is one possible reason ants remain inactive, according to Professor Dan Charbonneau?",
+      "generated_answer": "One possible reason ants remain inactive, according to Professor Dan Charbonneau, is that they could be reserve ants, ready to step in if disease or disaster strike.",
+      "faithfulness_score": 0.0,
+      "faithfulness_reason": "The ANSWER mentions Professor Dan Charbonneau but attributes the reserve ant explanation to him, which is not supported by the CONTEXT.",
+      "ground_truth": "They may be reserve ants, kept ready in case disease or disaster strikes the colony.",
+      "answer_similarity": 0.67
+    }
+  ],
+  "outputs": {
+    "summary": {
+      "completeness": 4,
+      "accuracy": 5,
+      "conciseness": 4,
+      "reason": "The summary captures most key points but omits the specific vocabulary list and slightly misrepresents the quiz question as a 'discussion point' rather than a standalone segment.",
+      "output": "Here\u2019s the final professional meeting summary in bullet points:\n\n### **Meeting Summary: Discussion on Laziness, Boredom, and Productivity**\n\n- **Introduction & Context**:\n  - Hosts Beth and Neil discuss laziness in the animal kingdom and whether humans could benefit from it.\n  - Neil complains about his exhausting day, while Beth highlights that even animals (e.g., worker bees) spend much of their time inactive.\n\n- **Evolutionary Perspective on Laziness**:\n  - Some animals, like ants (half of which are inactive) and lions (sleeping up to 20 hours a day), evolved to conserve energy.\n  - **Professor Dan Charbonneau** suggests ants may have inactive members as reserves for emergencies.\n\n- **Psychological Benefits of Boredom**:\n  - **Dr. Sandy Mann** argues that boredom fosters curiosity, creativity, and inventions (e.g., bread, beer, fire).\n  - In today\u2019s fast-paced world, embracing boredom can help slow down and relax, similar to how sloths conserve energy.\n\n- **Productivity vs. Relaxation**:\n  - Dr. Mann suggests that productivity is overrated and that downtime can be beneficial.\n  - The discussion covers vocabulary related to productivity and relaxation.\n\n- **Quiz Question**:\n  - The episode includes a quiz question about the slowest-moving animal on Earth.\n\nThis summary captures the key points while maintaining a professional and structured format."
+    },
+    "action items": {
+      "completeness": 1,
+      "accuracy": 5,
+      "conciseness": 5,
+      "reason": "The transcript is a casual discussion with no actionable items, so the AI correctly identified no action items.",
+      "output": "No action items found."
+    },
+    "key decisions": {
+      "completeness": 1,
+      "accuracy": 5,
+      "conciseness": 5,
+      "reason": "The AI output correctly identifies that no key decisions were present in the transcript.",
+      "output": "**No key decision found.**"
+    },
+    "open questions": {
+      "error": "Could not parse judge response: {\"completeness\": 4, \"accuracy\": 5, \"conciseness\": 5, \"reason\": \"The output captures the main discussion points but misses some key details like the definition of 'kicking back,' 'industrious,' 'colony,' 'productive,' and 'switch off,' as well as the proverb 'necessity is the mother of invention.'\"",
+      "output": "1. What is the slowest moving animal on earth? (Options: A. the giant tortoise, B. the three-toed sloth, or C. the koala)\n2. Why are so many ants inactive in their colonies?\n3. Could ants teach humans about relaxing, or would it get boring?\n4. What benefits does boredom have according to psychologist Dr Sandy Mann?\n5. How can humans overcome constant stimulation and boredom in today's world?"
+    }
+  }
+}

@@ -47,12 +47,24 @@ load_dotenv()
 # an aggregate picture across several videos instead of judging the
 # pipeline off just one.
 # ---------------------------------------------------------------------------
-SOURCE = "https://www.youtube.com/watch?v=Y681hXWwhQY"   # <-- change this
+SOURCE = "https://www.youtube.com/watch?v=2FZEznNC-Fs"   # <-- change this
 LANGUAGE = "english"
-VIDEO_LABEL = "v2"   # <-- change this each time you evaluate a new video
+VIDEO_LABEL = "v3"   # <-- change this each time you evaluate a new video
+
+# ---------------------------------------------------------------------------
+# RETRIEVAL EXPERIMENT KNOBS
+# Keep VIDEO_LABEL fixed (same transcript) and change ONLY these between
+# runs, one at a time, to see which setting actually improves faithfulness.
+# EXPERIMENT_LABEL goes into the results filename so runs don't overwrite
+# each other -- you'll end up with a clean comparison table.
+# ---------------------------------------------------------------------------
+CHUNK_SIZE = 500       # try: 500 (baseline) -> 800 -> 1000
+CHUNK_OVERLAP = 50     # try: 50 (baseline) -> 100
+RETRIEVAL_K = 4        # try: 4 (baseline) -> 6 -> 8
+EXPERIMENT_LABEL = f"cs{CHUNK_SIZE}_ov{CHUNK_OVERLAP}_k{RETRIEVAL_K}"
 
 CACHED_TRANSCRIPT_PATH = f"transcripts/{VIDEO_LABEL}.txt"
-RESULTS_PATH = f"evaluation_results_{VIDEO_LABEL}.json"
+RESULTS_PATH = f"evaluation_results_{VIDEO_LABEL}_{EXPERIMENT_LABEL}.json"
 SUMMARY_LOG_PATH = "evaluation_summary.json"  # running log across all videos
 
 # OPTIONAL ground truth answers, ONLY needed for the "answer similarity"
@@ -61,10 +73,9 @@ SUMMARY_LOG_PATH = "evaluation_summary.json"  # running log across all videos
 # against. Leave the list EMPTY to skip that metric entirely and rely on
 # faithfulness only (fully automatic, no manual work).
 MANUAL_GROUND_TRUTH = {
-    "What percentage of rock ants are inactive at any given time?": "Roughly about half (50%) of the ant colony is inactive at any given time.",
-    "What is the slowest moving animal on earth according to the discussion?": "The three-toed sloth, with a top speed of 30 centimetres per minute.",
-    "What does Dr Sandy Mann suggest about the benefits of boredom?": "She suggests boredom sparks curiosity and creativity — calling it 'the mother of invention' — and that inventions like bread, beer, or fire may not have happened without boredom.",
-    "What is one possible reason ants remain inactive, according to Professor Dan Charbonneau?": "They may be reserve ants, kept ready in case disease or disaster strikes the colony.",
+    "Why did senior doctors compare social media to smoking?": "Not because of the same physical health impact, but because they believe it's a serious health issue that needs to be taken seriously — similar to how attitudes changed about smoking and seatbelts.",
+    "What does 'behind the curve' mean in this context?": "It means reacting or acting more slowly than others to a change or trend — used to describe the UK PM being slow on a social media ban for under-16s.",
+    "What measures is the UK government considering besides a full ban?": "Curfews on app usage at night, stronger age checks, and restricting features like autoplay and infinite scroll.",
 }
 
 N_AUTO_QUESTIONS = 5  # how many questions to auto-generate from the transcript
@@ -193,13 +204,15 @@ def score_rubric(kind: str, transcript: str, output: str) -> dict:
 
 
 def evaluate_rag(transcript: str, embedder) -> list:
-    # Build the vector store / retriever directly instead of reaching into
-    # the chain's internals -- avoids the .first["context"] bug.
-    vector_store = build_vector_store(transcript)
-    retriever = get_retriever(vector_store, k=4)
+    # Build the vector store ONCE and reuse it for both the retriever
+    # (used here to inspect retrieved chunks) and the RAG chain -- do NOT
+    # build it twice, or the second build_vector_store() call will delete
+    # the collection the first one just created (see rag_engine.py note).
+    vector_store = build_vector_store(transcript, chunk_size=CHUNK_SIZE, chunk_overlap=CHUNK_OVERLAP)
+    retriever = get_retriever(vector_store, k=RETRIEVAL_K)
 
     from core.rag_engine import build_rag_chain
-    rag_chain = build_rag_chain(transcript)
+    rag_chain = build_rag_chain(vector_store=vector_store, k=RETRIEVAL_K)
 
     eval_questions = get_eval_questions(transcript)
     if not eval_questions:
@@ -297,6 +310,10 @@ def run_evaluation():
     # picture instead of separate disconnected JSON dumps.
     log_entry = {
         "video_label": VIDEO_LABEL,
+        "experiment": EXPERIMENT_LABEL,
+        "chunk_size": CHUNK_SIZE,
+        "chunk_overlap": CHUNK_OVERLAP,
+        "retrieval_k": RETRIEVAL_K,
         "source": SOURCE,
         "rag_avg_faithfulness": avg_faith,
         "rag_avg_answer_similarity": avg_sim,
@@ -310,7 +327,7 @@ def run_evaluation():
     if os.path.exists(SUMMARY_LOG_PATH):
         with open(SUMMARY_LOG_PATH, "r") as f:
             log = json.load(f)
-    log = [e for e in log if e.get("video_label") != VIDEO_LABEL]  # replace if re-run
+    log = [e for e in log if not (e.get("video_label") == VIDEO_LABEL and e.get("experiment") == EXPERIMENT_LABEL)]
     log.append(log_entry)
     with open(SUMMARY_LOG_PATH, "w") as f:
         json.dump(log, f, indent=2)

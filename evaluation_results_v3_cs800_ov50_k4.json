@@ -1,0 +1,58 @@
+{
+  "rag": [
+    {
+      "question": "Why did senior doctors compare social media to smoking?",
+      "generated_answer": "Senior doctors compared social media to smoking because they believe it is an important health issue that people need to take seriously, not because it has the same physical health impacts.",
+      "faithfulness_score": 1.0,
+      "faithfulness_reason": "The ANSWER is fully supported by the CONTEXT, which explicitly states the comparison and the reasoning behind it.",
+      "ground_truth": "Not because of the same physical health impact, but because they believe it's a serious health issue that needs to be taken seriously \u2014 similar to how attitudes changed about smoking and seatbelts.",
+      "answer_similarity": 0.61
+    },
+    {
+      "question": "What does 'behind the curve' mean in this context?",
+      "generated_answer": "In this context, \"behind the curve\" means that the UK Prime Minister is not acting quickly enough to address the issue of a social media ban for under-16s. It indicates that the Prime Minister is slower to respond to this trend compared to other countries like Australia, which have already implemented such bans.",
+      "faithfulness_score": 1.0,
+      "faithfulness_reason": "The answer directly quotes and paraphrases the context's explanation of 'behind the curve' and aligns with the provided examples and comparisons.",
+      "ground_truth": "It means reacting or acting more slowly than others to a change or trend \u2014 used to describe the UK PM being slow on a social media ban for under-16s.",
+      "answer_similarity": 0.596
+    },
+    {
+      "question": "What measures is the UK government considering besides a full ban?",
+      "generated_answer": "I could not find this information in the source content.",
+      "faithfulness_score": 0.0,
+      "faithfulness_reason": "The ANSWER claims information is not in the CONTEXT, but the CONTEXT does not state that any information is missing or unfindable.",
+      "ground_truth": "Curfews on app usage at night, stronger age checks, and restricting features like autoplay and infinite scroll.",
+      "answer_similarity": 0.204
+    }
+  ],
+  "outputs": {
+    "summary": {
+      "completeness": 4,
+      "accuracy": 5,
+      "conciseness": 4,
+      "reason": "The summary captures the main points but omits some details like the specific mention of Greece and France planning bans, the positive impacts of social media, and the ITN headline explanation.",
+      "output": "### **Final Professional Meeting Summary**\n\n- **Topic Discussed**: The potential harms of social media and screen time on children\u2019s mental health, including anxiety and poor well-being.\n- **Key Comparison**: Senior UK doctors liken social media to smoking and past risks like not wearing seatbelts, emphasizing its detrimental impact on teenagers.\n- **Government Action**: The UK government is considering banning social media for under-16s, similar to Australia\u2019s policy, with new rules expected by 2026.\n- **Proposed Measures**:\n  - Banning social media apps for under-16s.\n  - Implementing curfews on social media use.\n  - Strengthening age verification processes.\n  - Limiting features like autoplay.\n- **Political Criticism**: Former UK Health Secretary Wes Streeting criticizes the Prime Minister for being **behind the curve** (acting too slowly) compared to other countries.\n- **Terminology Explained**:\n  - **Overwhelming consensus**: A strong general agreement among a group (e.g., UK doctors advocating for stricter social media regulations).\n  - **Ahead of the curve**: Taking action before others.\n  - **Nothing\u2019s off the table**: All options remain under consideration.\n- **Debate on Effectiveness**: Some campaigners argue a total ban may not be the most effective solution.\n- **Government Stance**: No final decisions have been made yet, but discussions are ongoing."
+    },
+    "action items": {
+      "completeness": 1,
+      "accuracy": 5,
+      "conciseness": 5,
+      "reason": "The AI output correctly identifies that there are no action items in the transcript, as it is a news podcast discussing social media and health concerns without any meeting-related tasks.",
+      "output": "No action items found."
+    },
+    "key decisions": {
+      "completeness": 4,
+      "accuracy": 5,
+      "conciseness": 5,
+      "reason": "The output captures the main decisions but omits the comparison of social media to smoking and the expert warnings, though it remains accurate and concise.",
+      "output": "**Key Decisions Made:**\n\n1. The UK government is considering banning social media for under-16s, similar to the policy already implemented in Australia.\n2. The UK government plans to introduce new measures for under-16s to protect them from social media harms by the end of 2026.\n3. The UK government is considering additional measures such as curfews for social media use by children late at night, stronger age checks, and stopping features like autoplay and infinite scroll."
+    },
+    "open questions": {
+      "completeness": 4,
+      "accuracy": 5,
+      "conciseness": 5,
+      "reason": "The output captures key themes but misses some nuances like the comparison to smoking/seatbelts and the 'overwhelming consensus' phrasing.",
+      "output": "1. What specific measures will the UK government implement by the end of 2026 to protect under-16s from social media harms?\n2. How effective is a total ban on social media apps for children in preventing harm, according to experts and campaigners?\n3. What are the potential positive impacts of social media on children's lives, as acknowledged by some young people and experts?\n4. How will the UK government address concerns about social media harm while balancing the positive aspects of social media use among children?"
+    }
+  }
+}

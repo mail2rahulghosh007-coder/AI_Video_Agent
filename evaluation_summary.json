@@ -97,5 +97,187 @@
         "reason": "The output captures the main discussion points but misses some key details like the algae growing on sloths' coats and the idiom 'boredom is the mother of invention'."
       }
     }
+  },
+  {
+    "video_label": "v1",
+    "experiment": "cs500_ov50_k4",
+    "chunk_size": 500,
+    "chunk_overlap": 50,
+    "retrieval_k": 4,
+    "source": "https://www.youtube.com/watch?v=REPLACE_ME",
+    "rag_avg_faithfulness": 1.0,
+    "rag_avg_answer_similarity": null,
+    "n_rag_questions": 5,
+    "output_scores": {
+      "summary": {
+        "completeness": 4,
+        "accuracy": 5,
+        "conciseness": 4,
+        "reason": "The summary captures the main points but omits minor details like the setting (train, Wild West Town) and the rope bridge/cliff scenes, while otherwise being accurate and concise."
+      },
+      "action items": {
+        "completeness": 1,
+        "accuracy": 5,
+        "conciseness": 5,
+        "reason": "The AI failed to extract any action items despite the transcript containing clear instructions and tasks for the listener."
+      },
+      "key decisions": {
+        "completeness": 1,
+        "accuracy": 5,
+        "conciseness": 5,
+        "reason": "The AI output correctly identifies that no key decisions were made in the transcript, as it is an English practice lesson without decisions."
+      },
+      "open questions": {
+        "completeness": 1,
+        "accuracy": 5,
+        "conciseness": 5,
+        "reason": "The AI correctly identified that no open questions were present in the transcript."
+      }
+    }
+  },
+  {
+    "video_label": "v3",
+    "experiment": "cs500_ov50_k4",
+    "chunk_size": 500,
+    "chunk_overlap": 50,
+    "retrieval_k": 4,
+    "source": "https://www.youtube.com/watch?v=2FZEznNC-Fs",
+    "rag_avg_faithfulness": 1.0,
+    "rag_avg_answer_similarity": 0.5263333333333333,
+    "n_rag_questions": 3,
+    "output_scores": {
+      "summary": {
+        "completeness": 4,
+        "accuracy": 5,
+        "conciseness": 4,
+        "reason": "The summary captures the main points but omits some details like the comparison to seatbelts and the positive impacts of social media mentioned in the transcript."
+      },
+      "action items": {
+        "completeness": 1,
+        "accuracy": 5,
+        "conciseness": 5,
+        "reason": "The AI output correctly identifies that there are no action items in the transcript, as it is a news podcast discussing social media and health concerns without any meeting-related tasks."
+      },
+      "key decisions": {
+        "completeness": 4,
+        "accuracy": 5,
+        "conciseness": 5,
+        "reason": "The output captures the main decisions accurately and concisely but omits the comparison of social media to smoking and the context about expert opinions."
+      },
+      "open questions": {
+        "completeness": 4,
+        "accuracy": 5,
+        "conciseness": 5,
+        "reason": "The output captures most key points but misses the comparison to seatbelts and the phrase 'nothing's off the table' entirely, while all other questions are accurate and concise."
+      }
+    }
+  },
+  {
+    "video_label": "v2",
+    "experiment": "cs500_ov50_k4",
+    "chunk_size": 500,
+    "chunk_overlap": 50,
+    "retrieval_k": 4,
+    "source": "https://www.youtube.com/watch?v=Y681hXWwhQY",
+    "rag_avg_faithfulness": 0.75,
+    "rag_avg_answer_similarity": 0.59625,
+    "n_rag_questions": 4,
+    "output_scores": {
+      "summary": {
+        "completeness": 5,
+        "accuracy": 5,
+        "conciseness": 4,
+        "reason": "The summary captures all key points, vocabulary, and takeaways accurately, though it slightly reorganizes the flow for clarity."
+      },
+      "action items": {
+        "completeness": 1,
+        "accuracy": 5,
+        "conciseness": 5,
+        "reason": "The transcript is a casual discussion with no actionable items or tasks mentioned."
+      },
+      "key decisions": {
+        "completeness": 1,
+        "accuracy": 5,
+        "conciseness": 5,
+        "reason": "The AI output correctly identifies that no key decisions were present in the transcript."
+      },
+      "open questions": {
+        "completeness": 4,
+        "accuracy": 5,
+        "conciseness": 5,
+        "reason": "The output captures key points but misses some relevant details like the role of reserve ants, the algae on sloths, and the proverb's explanation."
+      }
+    }
+  },
+  {
+    "video_label": "v2",
+    "experiment": "cs800_ov50_k4",
+    "chunk_size": 800,
+    "chunk_overlap": 50,
+    "retrieval_k": 4,
+    "source": "https://www.youtube.com/watch?v=Y681hXWwhQY",
+    "rag_avg_faithfulness": 0.7,
+    "rag_avg_answer_similarity": 0.7304999999999999,
+    "n_rag_questions": 4,
+    "output_scores": {
+      "summary": {
+        "completeness": 4,
+        "accuracy": 5,
+        "conciseness": 4,
+        "reason": "The summary captures most key points but omits the specific vocabulary list and slightly misrepresents the quiz question as a 'discussion point' rather than a standalone segment."
+      },
+      "action items": {
+        "completeness": 1,
+        "accuracy": 5,
+        "conciseness": 5,
+        "reason": "The transcript is a casual discussion with no actionable items, so the AI correctly identified no action items."
+      },
+      "key decisions": {
+        "completeness": 1,
+        "accuracy": 5,
+        "conciseness": 5,
+        "reason": "The AI output correctly identifies that no key decisions were present in the transcript."
+      },
+      "open questions": {
+        "error": "Could not parse judge response: {\"completeness\": 4, \"accuracy\": 5, \"conciseness\": 5, \"reason\": \"The output captures the main discussion points but misses some key details like the definition of 'kicking back,' 'industrious,' 'colony,' 'productive,' and 'switch off,' as well as the proverb 'necessity is the mother of invention.'\""
+      }
+    }
+  },
+  {
+    "video_label": "v3",
+    "experiment": "cs800_ov50_k4",
+    "chunk_size": 800,
+    "chunk_overlap": 50,
+    "retrieval_k": 4,
+    "source": "https://www.youtube.com/watch?v=2FZEznNC-Fs",
+    "rag_avg_faithfulness": 0.6666666666666666,
+    "rag_avg_answer_similarity": 0.47,
+    "n_rag_questions": 3,
+    "output_scores": {
+      "summary": {
+        "completeness": 4,
+        "accuracy": 5,
+        "conciseness": 4,
+        "reason": "The summary captures the main points but omits some details like the specific mention of Greece and France planning bans, the positive impacts of social media, and the ITN headline explanation."
+      },
+      "action items": {
+        "completeness": 1,
+        "accuracy": 5,
+        "conciseness": 5,
+        "reason": "The AI output correctly identifies that there are no action items in the transcript, as it is a news podcast discussing social media and health concerns without any meeting-related tasks."
+      },
+      "key decisions": {
+        "completeness": 4,
+        "accuracy": 5,
+        "conciseness": 5,
+        "reason": "The output captures the main decisions but omits the comparison of social media to smoking and the expert warnings, though it remains accurate and concise."
+      },
+      "open questions": {
+        "completeness": 4,
+        "accuracy": 5,
+        "conciseness": 5,
+        "reason": "The output captures key themes but misses some nuances like the comparison to smoking/seatbelts and the 'overwhelming consensus' phrasing."
+      }
+    }
   }
 ]

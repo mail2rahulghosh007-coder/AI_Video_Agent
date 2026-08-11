@@ -1,0 +1,64 @@
+{
+  "rag": [
+    {
+      "question": "What was the name of the station where Henry got off the train?",
+      "generated_answer": "Henry got off the train at the West Town station.",
+      "faithfulness_score": 1.0,
+      "faithfulness_reason": "The ANSWER is fully supported by the CONTEXT, which explicitly states that Henry got off the train at the West Town station."
+    },
+    {
+      "question": "Why did Henry need a partner to find the robbers?",
+      "generated_answer": "According to Henry, he couldn't find the robbers alone. He said, \"I can't find the robbers alone.\"",
+      "faithfulness_score": 1.0,
+      "faithfulness_reason": "The ANSWER is fully supported by the CONTEXT, which explicitly states Henry's inability to find the robbers alone."
+    },
+    {
+      "question": "What did the nervous man tell Henry about the bank?",
+      "generated_answer": "The nervous man told Henry that there was a bank robbery.",
+      "faithfulness_score": 1.0,
+      "faithfulness_reason": "The answer is fully supported by the context, which explicitly states that the nervous man told Henry about a bank robbery."
+    },
+    {
+      "question": "How did Henry and Bonnie eventually catch the robbers?",
+      "generated_answer": "Henry and Bonnie found the robbers inside their mine while they were preparing explosives. They caught the robbers and handed them over to the police.",
+      "faithfulness_score": 1.0,
+      "faithfulness_reason": "The ANSWER is fully supported by the CONTEXT with no invented information."
+    },
+    {
+      "question": "What did Henry and Bonnie do after losing the robbers on the rope bridge?",
+      "generated_answer": "Henry and Bonnie had to take another road. The new road was longer. They spent the night playing instruments by the campfire.",
+      "faithfulness_score": 1.0,
+      "faithfulness_reason": "The ANSWER is fully supported by the CONTEXT with no invented information."
+    }
+  ],
+  "outputs": {
+    "summary": {
+      "completeness": 4,
+      "accuracy": 5,
+      "conciseness": 4,
+      "reason": "The summary captures the main points but omits minor details like the setting (train, Wild West Town) and the rope bridge/cliff scenes, while otherwise being accurate and concise.",
+      "output": "**Final Professional Meeting Summary:**\n\n- **Session Overview:**\n  - Conducted an English speaking practice session using a short story about a man named Henry.\n  - Focused on improving speaking skills through answering questions about the story.\n\n- **Story Summary:**\n  - Henry encounters a bank robbery.\n  - Teams up with Bonnie, a skilled and wise woman who never misses a shot.\n  - Together, they capture the robbers.\n\n- **Key Events:**\n  - A nervous man informs Henry about the bank robbery.\n  - Henry, feeling sad and angry, seeks a strong and wise partner.\n  - The man introduces Bonnie, who agrees to help.\n  - Henry and Bonnie prepare and set off to capture the robbers.\n\n- **Practice Activity:**\n  - Participants listened to the story and answered questions out loud to practice speaking.\n\n- **Additional Resources:**\n  - Participants were encouraged to further practice listening and speaking skills at EnglishEasyPractice.com."
+    },
+    "action items": {
+      "completeness": 1,
+      "accuracy": 5,
+      "conciseness": 5,
+      "reason": "The AI failed to extract any action items despite the transcript containing clear instructions and tasks for the listener.",
+      "output": "No action items found."
+    },
+    "key decisions": {
+      "completeness": 1,
+      "accuracy": 5,
+      "conciseness": 5,
+      "reason": "The AI output correctly identifies that no key decisions were made in the transcript, as it is an English practice lesson without decisions.",
+      "output": "No key decision found."
+    },
+    "open questions": {
+      "completeness": 1,
+      "accuracy": 5,
+      "conciseness": 5,
+      "reason": "The AI correctly identified that no open questions were present in the transcript.",
+      "output": "no open question found"
+    }
+  }
+}
