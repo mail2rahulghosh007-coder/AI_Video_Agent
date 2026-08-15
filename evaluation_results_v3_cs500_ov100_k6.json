@@ -1,0 +1,58 @@
+{
+  "rag": [
+    {
+      "question": "Why did senior doctors compare social media to smoking?",
+      "generated_answer": "Senior doctors compared social media to smoking because they believe it is an important health issue that people need to take seriously, not because it has the same physical health impacts.",
+      "faithfulness_score": 1.0,
+      "faithfulness_reason": "The ANSWER is fully supported by the CONTEXT, which explicitly states the comparison and the reasoning behind it.",
+      "ground_truth": "Not because of the same physical health impact, but because they believe it's a serious health issue that needs to be taken seriously \u2014 similar to how attitudes changed about smoking and seatbelts.",
+      "answer_similarity": 0.61
+    },
+    {
+      "question": "What does 'behind the curve' mean in this context?",
+      "generated_answer": "In this context, \"behind the curve\" means that the UK Prime Minister, Kier Stammer, is not acting quickly enough to address a particular issue\u2014in this case, implementing a social media ban for under-16s. It implies that he is reacting more slowly than other countries, such as Australia, which have already introduced such bans.\n\nAs stated in the source content:\n*\"If you are behind the curve, you are not acting quickly enough to deal with a particular change or trend.\"*",
+      "faithfulness_score": 1.0,
+      "faithfulness_reason": "The ANSWER fully aligns with the CONTEXT, directly quoting and elaborating on the definition of 'behind the curve' and its application to the UK Prime Minister's handling of the social media ban.",
+      "ground_truth": "It means reacting or acting more slowly than others to a change or trend \u2014 used to describe the UK PM being slow on a social media ban for under-16s.",
+      "answer_similarity": 0.602
+    },
+    {
+      "question": "What measures is the UK government considering besides a full ban?",
+      "generated_answer": "I could not find this information in the source content.",
+      "faithfulness_score": 0.0,
+      "faithfulness_reason": "The ANSWER claims the information is not in the CONTEXT, which is a meta-statement not supported by the CONTEXT itself.",
+      "ground_truth": "Curfews on app usage at night, stronger age checks, and restricting features like autoplay and infinite scroll.",
+      "answer_similarity": 0.204
+    }
+  ],
+  "outputs": {
+    "summary": {
+      "completeness": 4,
+      "accuracy": 5,
+      "conciseness": 4,
+      "reason": "The summary captures the main points but omits some details like the BBC Learning English context and specific examples of consensus phrasing.",
+      "output": "### **Final Professional Meeting Summary**\n\n- **Topic Discussed:** The impact of social media and screen time on children\u2019s mental health, as raised by UK senior doctors.\n- **Key Comparison:** Social media\u2019s harm is likened to smoking and seatbelt neglect, with medical professionals warning of rising anxiety and poor well-being among youth.\n- **Government Response:**\n  - The UK government is considering stricter regulations, including potential bans on social media for under-16s (similar to Australia\u2019s approach).\n  - New rules for under-16s are expected by **2026**, with possible measures such as:\n    - Banning social media apps\n    - Implementing curfews\n    - Strengthening age verification\n    - Limiting features like autoplay\n  - The phrase **\"nothing\u2019s off the table\"** indicates all options remain under consideration.\n\n- **International Comparison:**\n  - Some countries (e.g., Australia, Greece, France) have already taken stricter actions.\n  - The UK is perceived as **\"behind the curve\"** (acting too slowly) compared to others.\n  - Former UK Health Secretary Wes Streeting criticized the government\u2019s delayed response.\n\n- **Terminology Explained:**\n  - **\"Overwhelming consensus\"** \u2013 A strong general agreement among experts.\n  - **\"Behind the curve\"** \u2013 Reacting too slowly to a trend.\n  - **\"Ahead of the curve\"** \u2013 Acting early to address an issue.\n\n- **Balanced Perspective:**\n  - While stricter regulations are debated, some argue for a balanced approach, acknowledging potential benefits of social media.\n\nThis summary captures the key points, decisions, and discussions from the meeting in a clear, professional format."
+    },
+    "action items": {
+      "completeness": 1,
+      "accuracy": 5,
+      "conciseness": 5,
+      "reason": "The AI output correctly identifies that there are no action items in the transcript, as it is a news podcast discussing social media and health concerns without any meeting or task-related content.",
+      "output": "No action items found."
+    },
+    "key decisions": {
+      "completeness": 4,
+      "accuracy": 5,
+      "conciseness": 5,
+      "reason": "The output captures the main decisions but omits the comparison of social media to smoking and the phrase 'overwhelming consensus,' which are relevant to the discussion.",
+      "output": "**Key Decisions Made:**\n\n1. The UK government is considering banning social media for under-16s, similar to the policy already implemented in Australia.\n2. The UK government plans to introduce new measures for under-16s to protect them online by the end of 2026.\n3. The UK government is considering implementing curfews for social media apps for children, stronger age verification processes, and removing features like autoplay and infinite scroll."
+    },
+    "open questions": {
+      "completeness": 4,
+      "accuracy": 5,
+      "conciseness": 4,
+      "reason": "The output captures most key points but misses the comparison to smoking/seatbelts and the phrase 'overwhelming consensus'.",
+      "output": "1. What specific measures will the UK government implement by the end of 2026 to protect under-16s from social media harms?\n2. How effective is Australia\u2019s ban on social media for under-16s in preventing harm, and what evidence supports this?\n3. What are the potential unintended consequences of implementing a social media ban or curfews for children?\n4. How do young people\u2019s positive experiences with social media balance against the concerns raised by doctors and experts?\n5. What alternative solutions (e.g., age verification, limiting features like autoplay) have been proposed, and how feasible are they?\n6. Why do some experts argue that a ban similar to Australia\u2019s may not work in the UK context?\n7. What role should parents, schools, and tech companies play in addressing social media harms for children?"
+    }
+  }
+}

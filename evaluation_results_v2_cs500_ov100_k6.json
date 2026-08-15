@@ -1,0 +1,66 @@
+{
+  "rag": [
+    {
+      "question": "What percentage of rock ants are inactive at any given time?",
+      "generated_answer": "I could not find this information in the source content.",
+      "faithfulness_score": 0.0,
+      "faithfulness_reason": "The answer contains no information from the provided context and introduces an unrelated statement.",
+      "ground_truth": "Roughly about half (50%) of the ant colony is inactive at any given time.",
+      "answer_similarity": 0.223
+    },
+    {
+      "question": "What is the slowest moving animal on earth according to the discussion?",
+      "generated_answer": "The slowest moving animal on earth is the three-toed sloth.",
+      "faithfulness_score": 1.0,
+      "faithfulness_reason": "The context explicitly states that the three-toed sloth is the correct answer to the question about the world's slowest animal.",
+      "ground_truth": "The three-toed sloth, with a top speed of 30 centimetres per minute.",
+      "answer_similarity": 0.744
+    },
+    {
+      "question": "What does Dr Sandy Mann suggest about the benefits of boredom?",
+      "generated_answer": "Dr Sandy Mann suggests that boredom has its benefits and can lead to creativity and invention. She is quoted as saying, \"Would humans have invented bread or beer or fire if we hadn't been bored and were wondering what on earth would happen if we mixed this with this?\" She also mentions that instead of fearing boredom, we can open up to its benefits by switching off, stopping, worrying or thinking about something and relaxing.",
+      "faithfulness_score": 1.0,
+      "faithfulness_reason": "The ANSWER is fully supported by the CONTEXT with direct quotes and paraphrased ideas from Dr Sandy Mann.",
+      "ground_truth": "She suggests boredom sparks curiosity and creativity \u2014 calling it 'the mother of invention' \u2014 and that inventions like bread, beer, or fire may not have happened without boredom.",
+      "answer_similarity": 0.634
+    },
+    {
+      "question": "What is one possible reason ants remain inactive, according to Professor Dan Charbonneau?",
+      "generated_answer": "I could not find this information in the source content.",
+      "faithfulness_score": 0.0,
+      "faithfulness_reason": "The answer claims information is missing from the context, but the provided context does not contain a direct statement about whether the information is present or not.",
+      "ground_truth": "They may be reserve ants, kept ready in case disease or disaster strikes the colony.",
+      "answer_similarity": 0.176
+    }
+  ],
+  "outputs": {
+    "summary": {
+      "completeness": 4,
+      "accuracy": 5,
+      "conciseness": 4,
+      "reason": "The summary captures the main points but omits some details like the reserve ant theory and the specific mention of algae growing on sloths, while remaining accurate and mostly concise.",
+      "output": "### **Final Professional Meeting Summary**\n\n- **Topic Discussed**: The concept of laziness in the animal kingdom and its relevance to human productivity.\n- **Key Speakers**: Beth, Neil, and psychologist **Dr. Sandy Mann**.\n- **Main Arguments**:\n  - **Laziness in Animals**: Many animals conserve energy by being inactive (e.g., ants, lions, sloths).\n  - **Human Productivity**: Dr. Mann argues that constant busyness is overrated and that boredom can spark creativity.\n  - **Benefits of Boredom**: Encourages slowing down, disconnecting, and embracing inactivity for mental clarity.\n\n- **Key Vocabulary Defined**:\n  - *Kicking back* \u2013 Relaxing.\n  - *Industrious* \u2013 Hard-working.\n  - *Colony* \u2013 A group of animals.\n  - *Productive* \u2013 Efficient in work.\n  - *Switch off* \u2013 To relax or disconnect.\n\n- **Fun Fact**: The **three-toed sloth** is the slowest-moving animal.\n- **Call to Action**: Encouraged listeners to take time to do nothing for better mental well-being.\n\n**Final Takeaway**: Embracing laziness and boredom can lead to creativity and a healthier work-life balance."
+    },
+    "action items": {
+      "completeness": 1,
+      "accuracy": 5,
+      "conciseness": 5,
+      "reason": "The transcript is a casual discussion with no actionable items or decisions, so the AI correctly identified no action items.",
+      "output": "No action items found."
+    },
+    "key decisions": {
+      "completeness": 1,
+      "accuracy": 5,
+      "conciseness": 5,
+      "reason": "The AI output failed to extract any key decisions from the transcript, resulting in a completeness score of 1.",
+      "output": "no key decision found"
+    },
+    "open questions": {
+      "completeness": 4,
+      "accuracy": 5,
+      "conciseness": 5,
+      "reason": "The output captures the main discussion points but misses some key details like the algae on sloths' coats and the definition of 'switch off'.",
+      "output": "1. What is the slowest moving animal on earth? (Options provided: A. the giant tortoise, B. the three-toed sloth, or C. the koala)\n2. Why are so many ants inactive in their colonies? (Possible answer: reserve ants, but further clarification needed)\n3. Would humans have invented bread, beer, or fire if they hadn't been bored? (Discussion point raised by Dr Sandy Mann)\n4. How can humans benefit from boredom in a world of constant stimulation? (Question raised by Dr Sandy Mann)"
+    }
+  }
+}

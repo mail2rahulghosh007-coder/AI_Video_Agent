@@ -279,5 +279,227 @@
         "reason": "The output captures key themes but misses some nuances like the comparison to smoking/seatbelts and the 'overwhelming consensus' phrasing."
       }
     }
+  },
+  {
+    "video_label": "v2",
+    "experiment": "cs500_ov100_k4",
+    "chunk_size": 500,
+    "chunk_overlap": 100,
+    "retrieval_k": 4,
+    "source": "https://www.youtube.com/watch?v=REPLACE_ME",
+    "rag_avg_faithfulness": 0.5,
+    "rag_avg_answer_similarity": 0.5045000000000001,
+    "n_rag_questions": 4,
+    "output_scores": {
+      "summary": {
+        "completeness": 4,
+        "accuracy": 4,
+        "conciseness": 3,
+        "reason": "The summary captures most key points but omits the quiz answer (three-toed sloth) and some nuanced details like the algae growing on sloths' coats, while including some redundant phrasing."
+      },
+      "action items": {
+        "completeness": 1,
+        "accuracy": 5,
+        "conciseness": 5,
+        "reason": "The transcript is a casual discussion with no actionable items or decisions, so the AI correctly identified no action items."
+      },
+      "key decisions": {
+        "completeness": 1,
+        "accuracy": 5,
+        "conciseness": 5,
+        "reason": "The AI output correctly identifies that no key decisions were present in the transcript."
+      },
+      "open questions": {
+        "completeness": 3,
+        "accuracy": 5,
+        "conciseness": 5,
+        "reason": "The AI captured key points but missed the discussion on algae growing on sloths' coats, the proverb 'boredom is the mother of invention,' and the vocabulary recap."
+      }
+    }
+  },
+  {
+    "video_label": "v2",
+    "experiment": "cs500_ov50_k6",
+    "chunk_size": 500,
+    "chunk_overlap": 50,
+    "retrieval_k": 6,
+    "source": "https://www.youtube.com/watch?v=REPLACE_ME",
+    "rag_avg_faithfulness": 0.725,
+    "rag_avg_answer_similarity": 0.5922499999999999,
+    "n_rag_questions": 4,
+    "output_scores": {
+      "summary": {
+        "completeness": 5,
+        "accuracy": 5,
+        "conciseness": 4,
+        "reason": "The summary captures all key points accurately and concisely, with only minor redundancy in the 'Actionable Insights' section."
+      },
+      "action items": {
+        "completeness": 1,
+        "accuracy": 5,
+        "conciseness": 5,
+        "reason": "The transcript is a casual discussion with no actionable items or tasks mentioned."
+      },
+      "key decisions": {
+        "completeness": 1,
+        "accuracy": 5,
+        "conciseness": 5,
+        "reason": "The AI output correctly identifies that no key decisions were present in the transcript."
+      },
+      "open questions": {
+        "completeness": 4,
+        "accuracy": 5,
+        "conciseness": 5,
+        "reason": "The output captures the main discussion points but misses some key details like the specific examples of animals (lions, koala) and the vocabulary recap."
+      }
+    }
+  },
+  {
+    "video_label": "v2",
+    "experiment": "cs500_ov100_k6",
+    "chunk_size": 500,
+    "chunk_overlap": 100,
+    "retrieval_k": 6,
+    "source": "https://www.youtube.com/watch?v=REPLACE_ME",
+    "rag_avg_faithfulness": 0.5,
+    "rag_avg_answer_similarity": 0.44425,
+    "n_rag_questions": 4,
+    "output_scores": {
+      "summary": {
+        "completeness": 4,
+        "accuracy": 5,
+        "conciseness": 4,
+        "reason": "The summary captures the main points but omits some details like the reserve ant theory and the specific mention of algae growing on sloths, while remaining accurate and mostly concise."
+      },
+      "action items": {
+        "completeness": 1,
+        "accuracy": 5,
+        "conciseness": 5,
+        "reason": "The transcript is a casual discussion with no actionable items or decisions, so the AI correctly identified no action items."
+      },
+      "key decisions": {
+        "completeness": 1,
+        "accuracy": 5,
+        "conciseness": 5,
+        "reason": "The AI output failed to extract any key decisions from the transcript, resulting in a completeness score of 1."
+      },
+      "open questions": {
+        "completeness": 4,
+        "accuracy": 5,
+        "conciseness": 5,
+        "reason": "The output captures the main discussion points but misses some key details like the algae on sloths' coats and the definition of 'switch off'."
+      }
+    }
+  },
+  {
+    "video_label": "v3",
+    "experiment": "cs500_ov100_k4",
+    "chunk_size": 500,
+    "chunk_overlap": 100,
+    "retrieval_k": 4,
+    "source": "https://www.youtube.com/watch?v=REPLACE_ME",
+    "rag_avg_faithfulness": 0.6666666666666666,
+    "rag_avg_answer_similarity": 0.4673333333333333,
+    "n_rag_questions": 3,
+    "output_scores": {
+      "summary": {
+        "completeness": 4,
+        "accuracy": 5,
+        "conciseness": 4,
+        "reason": "The summary captures most key points but omits some details like the specific mention of the UK Technology Secretary's 2026 deadline and the positive impacts of social media on young people."
+      },
+      "action items": {
+        "completeness": 1,
+        "accuracy": 5,
+        "conciseness": 5,
+        "reason": "The AI correctly identified that there were no action items in the transcript, as it was an educational podcast without any meeting-related decisions or tasks."
+      },
+      "key decisions": {
+        "completeness": 1,
+        "accuracy": 5,
+        "conciseness": 5,
+        "reason": "The AI output correctly identifies that no key decisions were present in the transcript."
+      },
+      "open questions": {
+        "completeness": 4,
+        "accuracy": 5,
+        "conciseness": 5,
+        "reason": "The output captures the core discussion points but misses the comparison of social media to smoking/seatbelts and the phrase 'overwhelming consensus'."
+      }
+    }
+  },
+  {
+    "video_label": "v3",
+    "experiment": "cs500_ov50_k6",
+    "chunk_size": 500,
+    "chunk_overlap": 50,
+    "retrieval_k": 6,
+    "source": "https://www.youtube.com/watch?v=REPLACE_ME",
+    "rag_avg_faithfulness": 1.0,
+    "rag_avg_answer_similarity": 0.5826666666666668,
+    "n_rag_questions": 3,
+    "output_scores": {
+      "summary": {
+        "completeness": 5,
+        "accuracy": 5,
+        "conciseness": 4,
+        "reason": "The summary captures all key points from the transcript accurately and concisely, though it could trim some redundant phrasing (e.g., 'Final Professional Meeting Summary' and repeated explanations)."
+      },
+      "action items": {
+        "completeness": 1,
+        "accuracy": 5,
+        "conciseness": 5,
+        "reason": "The AI output correctly identifies that there are no action items in the transcript, as it is a news podcast discussing social media and health concerns without any meeting or task-related content."
+      },
+      "key decisions": {
+        "completeness": 4,
+        "accuracy": 5,
+        "conciseness": 5,
+        "reason": "The output captures the main decisions but omits the comparison of social media to smoking and the phrase 'nothing's off the table' context."
+      },
+      "open questions": {
+        "completeness": 5,
+        "accuracy": 5,
+        "conciseness": 5,
+        "reason": "The AI output captures all relevant unresolved topics from the transcript without adding inaccuracies or filler."
+      }
+    }
+  },
+  {
+    "video_label": "v3",
+    "experiment": "cs500_ov100_k6",
+    "chunk_size": 500,
+    "chunk_overlap": 100,
+    "retrieval_k": 6,
+    "source": "https://www.youtube.com/watch?v=REPLACE_ME",
+    "rag_avg_faithfulness": 0.6666666666666666,
+    "rag_avg_answer_similarity": 0.472,
+    "n_rag_questions": 3,
+    "output_scores": {
+      "summary": {
+        "completeness": 4,
+        "accuracy": 5,
+        "conciseness": 4,
+        "reason": "The summary captures the main points but omits some details like the BBC Learning English context and specific examples of consensus phrasing."
+      },
+      "action items": {
+        "completeness": 1,
+        "accuracy": 5,
+        "conciseness": 5,
+        "reason": "The AI output correctly identifies that there are no action items in the transcript, as it is a news podcast discussing social media and health concerns without any meeting or task-related content."
+      },
+      "key decisions": {
+        "completeness": 4,
+        "accuracy": 5,
+        "conciseness": 5,
+        "reason": "The output captures the main decisions but omits the comparison of social media to smoking and the phrase 'overwhelming consensus,' which are relevant to the discussion."
+      },
+      "open questions": {
+        "completeness": 4,
+        "accuracy": 5,
+        "conciseness": 4,
+        "reason": "The output captures most key points but misses the comparison to smoking/seatbelts and the phrase 'overwhelming consensus'."
+      }
+    }
   }
 ]

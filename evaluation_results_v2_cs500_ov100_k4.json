@@ -1,0 +1,66 @@
+{
+  "rag": [
+    {
+      "question": "What percentage of rock ants are inactive at any given time?",
+      "generated_answer": "I could not find this information in the source content.",
+      "faithfulness_score": 0.0,
+      "faithfulness_reason": "The answer claims information is missing from the context, but the context is a discussion about ants and does not contain any searchable information to begin with.",
+      "ground_truth": "Roughly about half (50%) of the ant colony is inactive at any given time.",
+      "answer_similarity": 0.223
+    },
+    {
+      "question": "What is the slowest moving animal on earth according to the discussion?",
+      "generated_answer": "The slowest moving animal on earth is the three-toed sloth, with a top speed of 30 centimetres per minute.",
+      "faithfulness_score": 1.0,
+      "faithfulness_reason": "The answer is fully supported by the context, which explicitly states the three-toed sloth is the slowest moving animal with a top speed of 30 centimetres per minute.",
+      "ground_truth": "The three-toed sloth, with a top speed of 30 centimetres per minute.",
+      "answer_similarity": 0.795
+    },
+    {
+      "question": "What does Dr Sandy Mann suggest about the benefits of boredom?",
+      "generated_answer": "Dr Sandy Mann suggests that boredom has its benefits and can lead to creativity and invention. She is quoted as saying, \"Would humans have invented bread or beer or fire if we hadn't been bored and were wondering what on earth would happen if we mixed this with this?\" She also implies that boredom can be the mother of invention, similar to the proverb \"necessity is the mother of invention.\"",
+      "faithfulness_score": 1.0,
+      "faithfulness_reason": "The ANSWER is fully supported by the CONTEXT with no invented information.",
+      "ground_truth": "She suggests boredom sparks curiosity and creativity \u2014 calling it 'the mother of invention' \u2014 and that inventions like bread, beer, or fire may not have happened without boredom.",
+      "answer_similarity": 0.824
+    },
+    {
+      "question": "What is one possible reason ants remain inactive, according to Professor Dan Charbonneau?",
+      "generated_answer": "I could not find this information in the source content.",
+      "faithfulness_score": 0.0,
+      "faithfulness_reason": "The answer claims information is missing from the context, but the context is a discussion about ants and does not contain any searchable information to begin with.",
+      "ground_truth": "They may be reserve ants, kept ready in case disease or disaster strikes the colony.",
+      "answer_similarity": 0.176
+    }
+  ],
+  "outputs": {
+    "summary": {
+      "completeness": 4,
+      "accuracy": 4,
+      "conciseness": 3,
+      "reason": "The summary captures most key points but omits the quiz answer (three-toed sloth) and some nuanced details like the algae growing on sloths' coats, while including some redundant phrasing.",
+      "output": "**Final Professional Meeting Summary:**\n\n- **Topic:** The Benefits of Laziness and Boredom in the Animal Kingdom and Human Life\n- **Key Speakers:** Beth, Neil, Professor Dan Charbonneau, and Dr. Sandy Mann (BBC Learning English segment)\n\n**Discussion Points:**\n- **Contrast in Lifestyles:**\n  - Neil describes his busy schedule, while Beth has a more relaxed day.\n  - Exploration of why some animals, like ants and lions, spend much of their time inactive.\n\n- **Research on Ants:**\n  - Professor Dan Charbonneau\u2019s study reveals that up to half of an ant colony is inactive at any given time.\n  - Possible reasons for inactivity: reserve workforce or lack of necessity to work.\n\n- **Benefits of Boredom (Dr. Sandy Mann):**\n  - Boredom can spark curiosity and creativity, leading to significant inventions (e.g., bread, beer, fire).\n  - Constant stimulation paradoxically increases boredom; more boredom can help alleviate it.\n  - Encouragement to embrace boredom by slowing down and relaxing.\n\n- **Vocabulary Definitions:**\n  - \"Kicking back\" \u2013 relaxing\n  - \"Industrious\" \u2013 hardworking\n  - \"Colony\" \u2013 a group of animals living together\n  - \"Productive\" \u2013 achieving a significant amount of work\n  - \"Switch off\" \u2013 to disconnect or relax\n\n- **Quiz and Conclusion:**\n  - Quiz question about the slowest moving animal (answer to be revealed later).\n  - Emphasis on the importance of taking time to do nothing.\n\n**Action Items/Next Steps:**\n- Reflect on personal schedules to find a balance between productivity and relaxation.\n- Consider incorporating more \"doing nothing\" time into daily routines to boost creativity and well-being."
+    },
+    "action items": {
+      "completeness": 1,
+      "accuracy": 5,
+      "conciseness": 5,
+      "reason": "The transcript is a casual discussion with no actionable items or decisions, so the AI correctly identified no action items.",
+      "output": "No action items found."
+    },
+    "key decisions": {
+      "completeness": 1,
+      "accuracy": 5,
+      "conciseness": 5,
+      "reason": "The AI output correctly identifies that no key decisions were present in the transcript.",
+      "output": "**No key decision found.**"
+    },
+    "open questions": {
+      "completeness": 3,
+      "accuracy": 5,
+      "conciseness": 5,
+      "reason": "The AI captured key points but missed the discussion on algae growing on sloths' coats, the proverb 'boredom is the mother of invention,' and the vocabulary recap.",
+      "output": "1. What is the slowest moving animal on earth? (Options: A. the giant tortoise, B. the three-toed sloth, or C. the koala)\n2. Why are so many ants inactive in their colonies?\n3. How can boredom be beneficial according to Dr Sandy Mann?\n4. What is the paradox related to boredom mentioned by Dr Sandy Mann?"
+    }
+  }
+}
